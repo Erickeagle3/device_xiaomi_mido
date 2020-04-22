@@ -88,9 +88,6 @@ persist.vendor.dpmhalservice.enable=1
 # DRM
 drm.service.enabled=true
 
-# Fm
-vendor.hw.fm.init=0
-
 # Frp
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 
