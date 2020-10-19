@@ -450,3 +450,7 @@ PRODUCT_PACKAGES += \
 # GCam Go
 PRODUCT_PACKAGES += \
     GCam
+
+# Messaging
+PRODUCT_PACKAGES += \
+   messaging
