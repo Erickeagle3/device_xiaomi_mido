@@ -37,6 +37,10 @@ TARGET_BOARD_SUFFIX := _64
 
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
+# Hals
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom-caf/msm8996
+
 # Kernel
 TARGET_KERNEL_CONFIG := mido_defconfig
 BOARD_KERNEL_BASE := 0x80000000
