@@ -56,6 +56,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 vendor.qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7
 
+# Blur
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.sf.disable_blurs=1
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
 media.camera.ts.monotonic=1 \
