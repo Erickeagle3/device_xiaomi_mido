@@ -48,3 +48,10 @@
 
 # Power
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock         u:object_r:hal_power_stats_default_exec:s0
+
+# AC Torch
+/sys/class/leds/led:torch_0/max_brightness    u:object_r:sysfs_torch:s0
+/sys/class/leds/led:torch_1/max_brightness    u:object_r:sysfs_torch:s0
+
+# AC Kcal
+/sys/devices/platform/kcal_ctrl.0(/.*)?    u:object_r:sysfs_kcal:s0
