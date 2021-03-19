@@ -8,3 +8,11 @@ allow qti_init_shell proc_swap:file { open write };
 
 # Postboot
 allow qti_init_shell sysfs:file { write setattr };
+
+# AdvancedControls
+allow qti_init_shell sysfs_kcal:dir search;
+allow qti_init_shell sysfs_kcal:file rw_file_perms;
+allow qti_init_shell sysfs_torch:dir search;
+allow qti_init_shell sysfs_torch:file rw_file_perms;
+allow qti_init_shell sysfs_vibrator:dir search;
+allow qti_init_shell sysfs_vibrator:file rw_file_perms;
