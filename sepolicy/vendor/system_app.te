@@ -1,2 +1,6 @@
 # zram
 r_dir_file(system_app sysfs_zram)
+
+# FPS
+allow system_app fm_radio_device:chr_file r_file_perms;
+allow system_app fm_radio_device:file r_file_perms;
