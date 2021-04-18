@@ -27,6 +27,9 @@ $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 # Bliss Build type 
 BLISS_BUILDTYPE := Official
 
+# Bliss Vanilla
+BLISS_BUILD_VARIANT := vanilla
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
 PRODUCT_NAME := bliss_mido
