@@ -27,6 +27,9 @@ $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 # Bliss Build type 
 BLISS_BUILDTYPE := Official
 
+# Bootanimation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Bliss Vanilla
 BLISS_BUILD_VARIANT := vanilla
 
