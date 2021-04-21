@@ -127,3 +127,5 @@ persist.hwc.enable_vds=1
 
 # Zygote Preforking
 persist.device.config.runtime_native.uasp_pool_enabled=true
+
+persist.sys.disable_rescue=true
