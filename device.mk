@@ -438,9 +438,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
-# Firefox
+# Styx
 PRODUCT_PACKAGES += \
-    Firefox
+    Styx
 
 # GCam Go
 PRODUCT_PACKAGES += \
