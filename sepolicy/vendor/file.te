@@ -21,4 +21,3 @@ type proc_touchpanel, fs_type, sysfs_type, proc_type;
 
 # AdvancedControls
 type sysfs_kcal, sysfs_type, fs_type;
-type sysfs_torch, sysfs_type, fs_type;

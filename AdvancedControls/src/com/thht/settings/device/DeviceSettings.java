@@ -47,9 +47,6 @@ public class DeviceSettings extends PreferenceActivity implements
 
     private static final String TAG = "thhtKCAL";
 
-    public static final String KEY_VIBSTRENGTH = "vib_strength";
-    public static final String KEY_YELLOW_TORCH_BRIGHTNESS = "yellow_torch_brightness";
-    public static final String KEY_WHITE_TORCH_BRIGHTNESS = "white_torch_brightness";
     public static final String KEY_KCAL_RGB_RED = "kcal_rgb_red";
     public static final String KEY_KCAL_RGB_BLUE = "kcal_rgb_blue";
     public static final String KEY_KCAL_RGB_GREEN = "kcal_rgb_green";
@@ -64,10 +61,6 @@ public class DeviceSettings extends PreferenceActivity implements
     public static final String KEY_SCREEN_COLOR = "key_screen_color";
     public static final String KEY_KCAL_EXTRAS = "key_kcal_extras";
 
-
-    private VibratorStrengthPreference mVibratorStrength;
-    private YellowTorchBrightnessPreference mYellowTorchBrightness;
-    private WhiteTorchBrightnessPreference mWhiteTorchBrightness;
     private SwitchPreference restoreOnBootPreference;
     private SwitchPreference kcalPresetsPreference;
     private ListPreference kcalPresetsListPreference;
@@ -83,21 +76,6 @@ public class DeviceSettings extends PreferenceActivity implements
 
         getListView().setDivider(new ColorDrawable(Color.TRANSPARENT));
         getListView().setDividerHeight(0);
-
-        mVibratorStrength = (VibratorStrengthPreference) findPreference(KEY_VIBSTRENGTH);
-        if (mVibratorStrength != null) {
-            mVibratorStrength.setEnabled(VibratorStrengthPreference.isSupported());
-        }
-
-        mYellowTorchBrightness = (YellowTorchBrightnessPreference) findPreference(KEY_YELLOW_TORCH_BRIGHTNESS);
-        if (mYellowTorchBrightness != null) {
-            mYellowTorchBrightness.setEnabled(YellowTorchBrightnessPreference.isSupported());
-        }
-        
-        mWhiteTorchBrightness = (WhiteTorchBrightnessPreference) findPreference(KEY_WHITE_TORCH_BRIGHTNESS);
-        if (mWhiteTorchBrightness != null) {
-            mWhiteTorchBrightness.setEnabled(WhiteTorchBrightnessPreference.isSupported());
-        }
 
         restoreOnBootPreference = (SwitchPreference) findPreference(KEY_RESTORE_ON_BOOT);
         Boolean shouldRestore = PreferenceManager.getDefaultSharedPreferences(this).getBoolean(DeviceSettings.KEY_RESTORE_ON_BOOT, false); 
