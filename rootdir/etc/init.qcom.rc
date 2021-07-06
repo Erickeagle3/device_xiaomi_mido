@@ -150,12 +150,6 @@ on boot
     chown root system /sys/devices/platform/kcal_ctrl.0/kcal_cont
     chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_cont
 
-    # Flashlight
-    chown root system /sys/class/leds/led:torch_0/max_brightness
-    chmod 0660 /sys/class/leds/led:torch_0/max_brightness
-    chown root system /sys/class/leds/led:torch_1/max_brightness
-    chmod 0660 /sys/class/leds/led:torch_1/max_brightness
-
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
