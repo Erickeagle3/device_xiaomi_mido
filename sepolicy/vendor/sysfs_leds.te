@@ -1,2 +1,0 @@
-allow sysfs_leds sysfs_leds:dir { search };
-allow sysfs_leds sysfs_leds:file { getattr  open  read  write };

@@ -16,10 +16,6 @@ public class RestoreService extends IntentService {
 
     @Override
     protected void onHandleIntent(Intent intent) {
-        
-        VibratorStrengthPreference.restore(this);
-        WhiteTorchBrightnessPreference.restore(this);
-        YellowTorchBrightnessPreference.restore(this);
 
         Boolean shouldRestorePreset = intent.getExtras().getBoolean(DeviceSettings.KEY_KCAL_PRESETS, false);
 
