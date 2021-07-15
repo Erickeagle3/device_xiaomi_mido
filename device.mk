@@ -446,8 +446,8 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Styx
-PRODUCT_PACKAGES += \
-    Styx
+#PRODUCT_PACKAGES += \
+#    Styx
 
 # GCam Go
 PRODUCT_PACKAGES += \
