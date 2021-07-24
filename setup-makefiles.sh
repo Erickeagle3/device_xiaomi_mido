@@ -12,6 +12,9 @@ set -e
 DEVICE=mido
 VENDOR=xiaomi
 
+# Enable Dexpreopt
+DEXPREOPTAPPS=true
+
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
