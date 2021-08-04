@@ -24,6 +24,9 @@ $(call inherit-product, device/xiaomi/mido/device.mk)
 # Inherit some common havoc stuff.
 $(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
+# Build type
+HAVOC_BUILD_TYPE := Official
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
 PRODUCT_NAME := havoc_mido
