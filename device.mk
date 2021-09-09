@@ -173,12 +173,10 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
     libdisplayconfig \
-    libdisplayconfig.qti \
     libqdMetaData \
     libtinyxml \
     libvulkan \
-    vendor.display.config@1.0.vendor \
-    vendor.display.config@2.0
+    vendor.display.config@1.0.vendor
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
@@ -401,7 +399,6 @@ PRODUCT_PACKAGES += \
 
 # Whitelisted apps
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
 
 # Wifi
@@ -427,14 +424,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
-# Wi-Fi Display
-PRODUCT_PACKAGES += \
-    libnl \
-    libshim_wfdmmsink
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-
 # Styx
 PRODUCT_PACKAGES += \
     Styx
@@ -442,3 +431,4 @@ PRODUCT_PACKAGES += \
 # GCam Go
 PRODUCT_PACKAGES += \
     GCam
+
