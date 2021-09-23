@@ -135,3 +135,7 @@ persist.device.config.runtime_native.uasp_pool_enabled=true
 
 #GBoard
 ro.com.google.ime.kb_pad_port_b=1
+
+# Havoc 
+ro.havoc.group.url=https://t.me/havoc_mido
+ro.havoc.maintainer=Erick Eagle (NBD_ERICK)
