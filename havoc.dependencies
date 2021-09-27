@@ -1,0 +1,22 @@
+[
+ { "repository" : "Havoc-Devices/android_vendor_xiaomi_mido",
+   "target_path" : "vendor/xiaomi",
+   "branch" : "eleven"
+ },
+ { "repository" : "Havoc-Devices/android_kernel_xiaomi_mido",
+   "target_path" : "kernel/xiaomi/mido",
+   "branch" : "eleven"
+ },
+ { "repository" : "Havoc-Devices/android_hardware_qcom_media",
+   "target_path" : "hardware/qcom-caf/msm8996/media",
+   "branch" : "eleven"
+ },
+ { "repository" : "Havoc-Devices/android_hardware_qcom_display",
+   "target_path" : "hardware/qcom-caf/msm8996/display",
+   "branch" : "eleven"
+ },
+ { "repository" : "Havoc-Devices/android_hardware_qcom_audio-1",
+   "target_path" : "hardware/qcom-caf/msm8996/audio",
+   "branch" : "eleven"
+ },
+]
